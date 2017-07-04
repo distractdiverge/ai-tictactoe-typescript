@@ -1,0 +1,23 @@
+{
+  "name": "ai-tictactoe-typescript",
+  "version": "1.0.0",
+  "description": "A simple implementation of tictactoe in typescript.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "tsc",
+    "coverage": ""
+  },
+  "repository": "git@github.com:alexlapinski/ai-tictactoe-typescript.git",
+  "author": "Alex Lapinski <contact@alexlapinski.name>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/ndarray": "^1.0.3",
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2",
+    "typescript": "^2.4.1"
+  },
+  "dependencies": {
+    "ndarray": "^1.0.18"
+  }
+}
