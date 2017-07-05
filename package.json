@@ -12,12 +12,18 @@
   "author": "Alex Lapinski <contact@alexlapinski.name>",
   "license": "MIT",
   "devDependencies": {
+    "@types/lodash": "^4.14.68",
     "@types/ndarray": "^1.0.3",
     "chai": "^4.0.2",
     "mocha": "^3.4.2",
+    "ndarray": "^1.0.18",
+    "ndarray-scratch": "^1.2.0",
     "typescript": "^2.4.1"
   },
   "dependencies": {
-    "ndarray": "^1.0.18"
+    "lodash": "^4.17.4",
+    "ndarray-diagonal": "^1.0.0",
+    "ndarray-ops": "^1.2.2",
+    "ndarray-show": "^2.0.0"
   }
 }

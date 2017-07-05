@@ -1,18 +1,19 @@
 import './game';
-import './ndarray';
+import * as ndarray from 'ndarray';
+import * as pool from 'ndarray-scratch';
 
 export class Board {
-    private _state: any;
+    private _state: ndarray;
 
-    constructor(width, height) {
-        // _state = ndarray(); TODO
+    constructor(width:number, height:number) {
+        this._state = pool.zeros([width, height], 'double');
     }
 
-    get width() {
+    get width():number {
         return this._state.shape[0];
     }
 
-    get height() {
+    get height():number {
         return this._state.shape[1];
     }
 }
