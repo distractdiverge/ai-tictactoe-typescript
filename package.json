@@ -4,17 +4,18 @@
   "description": "A simple implementation of tictactoe in typescript.",
   "main": "dist/index.js",
   "scripts": {
-    "pretest": "npm run build",
     "prestart": "npm run build",
     "build": "tsc",
     "test": "nyc --reporter=html --reporter=text mocha",
-    "coverage": "npm run build && nyc report --reporter=text-lcov | coveralls"
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": "git@github.com:alexlapinski/ai-tictactoe-typescript.git",
   "author": "Alex Lapinski <contact@alexlapinski.name>",
   "license": "MIT",
   "devDependencies": {
+    "@types/chai": "^4.0.1",
     "@types/lodash": "^4.14.68",
+    "@types/mocha": "^2.2.41",
     "@types/ndarray": "^1.0.3",
     "chai": "^4.0.2",
     "coveralls": "^2.13.1",
@@ -22,6 +23,7 @@
     "ndarray": "^1.0.18",
     "ndarray-scratch": "^1.2.0",
     "nyc": "^11.0.3",
+    "ts-node": "^3.2.0",
     "typescript": "^2.4.1"
   },
   "dependencies": {
@@ -29,5 +31,10 @@
     "ndarray-diagonal": "^1.0.0",
     "ndarray-ops": "^1.2.2",
     "ndarray-show": "^2.0.0"
+  },
+  "nyc": {
+    "extension": [ ".ts" ],
+    "exclude": [ "**/*.d.ts" ],
+    "require": [ "ts-node/register" ]
   }
 }
