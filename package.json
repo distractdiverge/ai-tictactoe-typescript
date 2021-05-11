@@ -27,7 +27,7 @@
     "typescript": "^2.4.1"
   },
   "dependencies": {
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "ndarray-diagonal": "^1.0.0",
     "ndarray-ops": "^1.2.2",
     "ndarray-show": "^2.0.0"
