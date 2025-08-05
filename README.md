@@ -1,7 +1,7 @@
 # AI - Tic-Tac-Toe in TypeScript
 A simple adversarial search implemented in typescript.
 
-[![Build Status](https://travis-ci.org/alexlapinski/ai-tictactoe-typescript.svg?branch=master)](https://travis-ci.org/alexlapinski/ai-tictactoe-typescript)
+(This is a typescript port of https://github.com/distractdiverge/ai-tictactoe-javascript)
 
 ## Getting Started
 Follow the following steps to get started.
