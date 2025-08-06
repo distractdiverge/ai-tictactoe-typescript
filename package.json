@@ -16,7 +16,8 @@
     "@types/chai": "^4.0.1",
     "@types/lodash": "^4.14.68",
     "@types/mocha": "^2.2.41",
-    "@types/ndarray": "^1.0.3",
+    "@types/ndarray": "^1.0.14",
+    "@types/ndarray-ops": "^1.2.7",
     "chai": "^4.0.2",
     "coveralls": "^2.13.1",
     "mocha": "^3.4.2",
@@ -33,8 +34,14 @@
     "ndarray-show": "^2.0.0"
   },
   "nyc": {
-    "extension": [ ".ts" ],
-    "exclude": [ "**/*.d.ts" ],
-    "require": [ "ts-node/register" ]
+    "extension": [
+      ".ts"
+    ],
+    "exclude": [
+      "**/*.d.ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
   }
 }

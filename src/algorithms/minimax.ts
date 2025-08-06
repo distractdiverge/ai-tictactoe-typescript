@@ -1,9 +1,5 @@
-const _ = require('lodash');
-const Board = require('../models/board');
-
-module.exports = {
-    getMove
-};
+import _ from 'lodash';
+import Board from '../models/board';
 
 function getMove(state, player, maxDepth = 3) {
     //
@@ -78,3 +74,5 @@ function _minValue(state, depth) {
 
     return value
 }
+
+export default getMove;
