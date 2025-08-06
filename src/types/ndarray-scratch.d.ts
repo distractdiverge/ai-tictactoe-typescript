@@ -1,10 +1,12 @@
-import * as ndarray from 'ndarray';
-
 // TODO: Extract to stand-alone package similar to @types/ndarray
+declare module 'ndarray-scratch' {
 
-export function clone(array:ndarray) : ndarray;
-export function malloc(shape:number[], dtype:string) : ndarray;
-export function free(array:ndarray) : void;
-export function zeros(shape:number[], dtype?:string):ndarray;
-export function ones(shape:number[], dtype?:string):ndarray;
-export function eye(shape:number[], dtype?:string):ndarray;
+    import { NdArray } from 'ndarray';
+
+    export function clone(array:NdArray) : NdArray;
+    export function malloc(shape:number[], dtype:string) : NdArray;
+    export function free(array:NdArray) : void;
+    export function zeros(shape:number[], dtype?:string):NdArray;
+    export function ones(shape:number[], dtype?:string):NdArray;
+    export function eye(shape:number[], dtype?:string):NdArray;
+}
